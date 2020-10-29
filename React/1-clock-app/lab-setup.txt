@@ -1,0 +1,20 @@
+React JS Lab Setup
+----------------------
+
+Step-1: Install Node.JS Server form ( https://nodejs.org/en/ )
+
+Step-2: Download and install visual studio code from (https://code.visualstudio.com/)
+
+Step-3: Install git from ( https://git-scm.com/ )
+
+Step-4: Install / Configure any database as per your choice. (MongoDB/MySQL/SQL-Server)
+
+
+Server API Development
+-----------------------------------------------------
+
+1. With nodejs using express js / loopback js (api end point urls)
+2. java: Spring Restful api
+3. Dotnet: Dotnet tech to create REST end point url
+
+----------------------------------------------------------
