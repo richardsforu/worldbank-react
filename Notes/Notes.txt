@@ -264,7 +264,7 @@ problems/limitations with plain-js ( your-code ) with browser-apis
         parent --> child : data/props will go down
         child  --> parent : action/event will come up
 
-
+     
 
         --------------------------------------------------
 
@@ -313,7 +313,7 @@ problems/limitations with plain-js ( your-code ) with browser-apis
 
 
         1. react.js    from facebook       : v16.12   ( our focus  )
-        2. Angular     from google-team    : v9
+        2. Angular     from google-team    : v10
         3. Vue.js
         4. Ember.js
         5. Aurelia.js
