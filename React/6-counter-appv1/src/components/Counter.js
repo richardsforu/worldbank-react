@@ -44,9 +44,6 @@ class Counter extends Component {
                 </div>
 
                 <hr/>
-
-
-
             </div>
         );
     }
