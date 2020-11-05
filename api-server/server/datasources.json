@@ -1,0 +1,17 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "mongodb-react": {
+    "host": "",
+    "port": 0,
+    "url": "mongodb+srv://user1:user1@cluster0-lbevs.mongodb.net/cts",
+    "database": "",
+    "password": "",
+    "name": "mongodb-react",
+    "user": "",
+    "useNewUrlParser": true,
+    "connector": "mongodb"
+  }
+}
