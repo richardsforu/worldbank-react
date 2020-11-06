@@ -2,6 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ProductForm from './components/ProductForm';
 import EmployeeForm from './components/EmployeeForm';
+import ProductList from './components/ProductList';
 const App = () => {
   return (
     <div className="container">
@@ -13,6 +14,10 @@ const App = () => {
        <hr/>
 
        <EmployeeForm/>
+
+       <hr/>
+
+       <ProductList/>
 
 
     </div>

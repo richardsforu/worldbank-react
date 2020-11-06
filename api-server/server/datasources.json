@@ -3,13 +3,13 @@
     "name": "db",
     "connector": "memory"
   },
-  "mongodb-react": {
+  "mongodb-employee": {
     "host": "",
     "port": 0,
-    "url": "mongodb+srv://user1:user1@cluster0-lbevs.mongodb.net/cts",
+    "url": "mongodb+srv://user1:user1@cluster0.lbevs.mongodb.net/cts",
     "database": "",
     "password": "",
-    "name": "mongodb-react",
+    "name": "mongodb-employee",
     "user": "",
     "useNewUrlParser": true,
     "connector": "mongodb"

@@ -1,0 +1,8 @@
+export function loadItems(type,size) {
+    //.....
+    let items =[
+        {id:1,name:'Laptop',price:100000, currency:'INR',canBuy:true,description:'New Mac Book Pro',image:'images/Laptop.png'},
+        {id:2,name:'Mobile',price:35000,currency:'INR',canBuy:true,description:'Samsung S9 Plus',image:'images/Mobile.png'}
+    ]
+    return {type:'LOAD_ITEMS',items}
+}

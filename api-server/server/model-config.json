@@ -36,7 +36,7 @@
     "public": false
   },
   "employee": {
-    "dataSource": "mongodb-react",
+    "dataSource": "mongodb-employee",
     "public": true
   }
 }

@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react';
-
+import axios from 'axios';
 const ProductForm = () => {
 
     let [product, setProduct] = useState(
         {
-            id:'',
             name:'',
             price:'',
             description:''
@@ -16,7 +15,11 @@ const ProductForm = () => {
         console.log('-- submited..');
        // console.log(e.target);
        console.log(product);
-       
+       axios.post('http://localhost:3000/api/employees',product)
+       .then(response =>response.data)
+       .then(employee =>{
+           console.log(employee);
+       })
     }
 
     const handleChange = (e) => {
@@ -32,10 +35,7 @@ const ProductForm = () => {
         <div>
             <div className="col-6">
                 <form autoComplete="off">
-                    <div className="form-group">
-                        <label>Product ID</label>
-                        <input onChange={e => handleChange(e)} className="form-control" name="id" />
-                    </div>
+                   
 
                     <div className="form-group">
                         <label>Product Name</label>

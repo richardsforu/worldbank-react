@@ -5,10 +5,12 @@ import axios from "axios";
 function saveEmployee(data) {
     console.log(data);
     axios.post('http://localhost:3000/api/employees', data)
-        .then(response => response.json())
+        .then(response => response.data)
         .then(employee => {
             console.log(employee);
-        })
+        }).catch((error) => {
+            console.log(error)
+        });
     // server side code..
 }
 
@@ -21,16 +23,8 @@ const EmployeeForm = () => {
         <div>
             <div className="col-6">
                 <form autoComplete="off" onSubmit={handleSubmit(saveEmployee)}>
-                    <div className="form-group">
-                        <label>Employee ID</label>
-                        <input ref={register(({ required: true, maxLength: 10 }))} className="form-control" name="id" />
-                        {errors.id && errors.id.type === "required" && (
-                            <span className="text-danger">Employee is is required</span>
-                        )}
-                        {errors.id && errors.id.type === "maxLength" && (
-                            <span className="text-danger">Max length exceeded</span>
-                        )}
-                    </div>
+                   
+                      
 
                     <div className="form-group">
                         <label>Employee Name</label>
@@ -46,7 +40,7 @@ const EmployeeForm = () => {
 
                     <div className="form-group">
                         <label>Salary</label>
-                        <input ref={register} className="form-control" name="salary" />
+                        <input type="number" ref={register} className="form-control" name="salary" />
                     </div>
 
                     <div className="form-group">

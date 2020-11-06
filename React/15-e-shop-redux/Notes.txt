@@ -1,0 +1,32 @@
+step-1: identify ui application's state
+    e.g: e-shop ui application
+    -------------------------------
+        - items
+        - reviews
+        - cart
+        - user
+        - orders
+        - loadingStatus
+
+step-2: identify fource/action(s) that causes state change
+    eg: e-shop ui application
+    --------------------------
+        - LOAD_ITEMS
+        - SEARCH_ITEMS
+        - LOAD_REVIEWS
+        - ADD_NEW_REVIEW
+        - BUY
+        - LOGIN
+        - REQUEST_BEGIN
+        - REQUEST_ERROR
+        - REQUEST_SUCCESS
+
+step-3: define reducer(s) , to process actions
+    eg:
+        - itemsReducer
+        - reviewsReducer
+        - cartReducer
+
+step-4: combine all reducer(s) as rootReducer
+
+step-5: create store with rootReducer and initialState
